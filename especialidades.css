@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* HEADER - COMEÇO */
+header{
+    background-color: #00cad1;
+    width: 100%;
+}
+
+#header{
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo img{
+    width: 120px;
+}
+
+.link{
+    margin-top: 20px;
+}
+
+.link a{
+    margin-right: 20px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.link a:hover{
+    color: black;
+    transition: .5s;
+}
+/* HEADER - FIM */
+
+/* MAIN - COMEÇO */
+
+.link-especialidade{
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.link-especialidade a{
+    border-bottom: 2px solid #00cad1;
+    color: black;
+    font-size: 18px;
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+.link-especialidade a:hover{
+    color: #00cad1;
+    transition: .3s;
+}
+
+.titulo{
+    padding-top: 25px;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1024px;
+}
+
+.titulo h1{
+    color: #6e6d6b;
+    text-align: center;
+    font-size: 22px;
+}
+
+.categoria{
+    padding-top: 30px;
+    padding-bottom: 15px;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1024px;
+}
+
+.categoria h2{
+    color: #6e6d6b;
+    text-align: center;
+    font-size: 18px;
+}
+
+.descricao{
+    padding-bottom: 20px;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1024px;
+}
+
+.descricao p{
+    color: #928d87;
+    margin: 0 auto;
+    text-align: center;
+    width: 55%;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table tr:nth-child(odd){
+    background-color: lightgray;
+}
+
+tr{
+    background-color: rgb(241, 241, 241);
+}
+
+th{
+    background-color: #00cad1;
+    color: white;
+    text-align: left;
+    padding: 10px;
+}
+
+td{
+    padding: 20px 0px 20px 10px;
+}
+
+.table-geriatria td{
+    padding: 14px 0px 14px 10px;
+}
+
+.table-fisioterapia td{
+    padding: 5px 0px 5px 10px;
+}
+
+.cronograma{
+    width: 100%;
+    max-width: 1024px;
+    margin: auto;
+    display: flex;
+}
+
+.cronograma img{
+    width: 250px;
+}
+/* MAIN - FIM */
+
+/* FOOTER - COMEÇO */
+
+footer{
+    background-color: #0c6e71;
+    padding-bottom: 20px;
+    margin-top: 60px;
+    width: 100%;
+}
+
+footer img{
+    width: 120px;
+    display: block;
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+footer p{
+    color: white;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+/* FOOTER - FIM */
+
+/* RESPONSIVO - COMEÇO */
+
+@media(max-width: 768px){
+    .cronograma img{
+        display: none;
+    }
+
+    table{
+        margin: 0px 20px;
+    }
+
+    td{
+        padding: 10px 0px 10px 10px;
+    }
+}
+
+@media(max-width: 425px){
+    table{
+        margin: 0px;
+    }
+}
+
+/* RESPONSIVO - FIM */

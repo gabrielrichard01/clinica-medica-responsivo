@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* BANNER - COMEÇO */
+#banner{
+    width: 100%;
+    height: 460px;
+    background-image: url('./assets/recepcao.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.titulo{
+    max-width: 1024px;
+    margin: 0 auto;
+    padding-top: 180px;
+    text-transform: uppercase;
+    color: white;
+    
+}
+
+.titulo h1{
+    font-size: 40px;
+    font-weight: normal;
+}
+
+.titulo p{
+    font-size: 40px;
+}
+/* BANNER - FIM */
+
+/* HEADER - COMEÇO */
+header{
+    background-color: #00cad1;
+    width: 100%;
+}
+
+#header{
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo img{
+    width: 120px;
+}
+
+.link{
+    margin-top: 20px;
+}
+
+.link a{
+    margin-right: 20px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.link a:hover{
+    color: black;
+    transition: .5s;
+}
+/* HEADER - FIM */
+
+/* SOBRE - COMEÇO */
+
+#sobre{
+    width: 100%;
+}
+
+.sobre-titulo{
+    max-width: 1024px;
+    margin: 0 auto;
+    padding-top: 40px;
+}
+
+.sobre-titulo h2{
+    color: #6e6d6b;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.sobre-titulo p{
+    color: #928d87;
+    text-align: center;
+    margin: 0 auto;
+    width: 55%;
+}
+
+.beneficio{
+    max-width: 1024px;
+    padding-top: 15px;
+    margin: 0 auto;
+    justify-content: center;
+    display: flex;
+}
+
+.imagem{
+    padding-right: 12px;
+}
+
+.lista-beneficio{
+    padding-top: 30px;
+}
+
+.lista-beneficio h3{
+    padding-top: 20px;
+    padding-bottom: 15px;
+    color: #928d87;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+.lista-beneficio ul{
+    color: #928d87;
+    margin-left: 38px;
+}
+/* SOBRE - FIM */
+
+/* ESPECIALIDADE - COMEÇO */
+
+#especialidade{
+    width: 100%;
+}
+
+.sobre-especialidade{
+    max-width: 1024px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.sobre-especialidade h2{
+    color: #6e6d6b;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 15px;
+}
+
+.sobre-especialidade p{
+    width: 50%;
+    color: #928d87;
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 30px;
+}
+
+.area{
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.medico img{
+    width: 100%;
+}
+
+figure{
+    margin: 0 20px;
+    box-shadow: 1px 1px 10px #928d87;
+}
+
+figcaption{
+    padding: 10px 0;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 18px;
+    color: #928d87;
+}
+
+.time{
+    height: 44px;
+    width: 140px;
+    text-align: center;
+    max-width: 1024px;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: #00cad1;
+}
+
+.time a{
+    text-decoration: none;
+}
+
+.time p{
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding-top: 10px;
+}
+
+.time:hover{
+    cursor: pointer;
+    background-color: white;
+    border: 1px solid #00cad1;
+}
+
+.time p:hover{
+    color: #00cad1;
+}
+/* ESPECIALIDADE - FIM */
+
+/* CONTATO - COMEÇO */
+
+#contato{
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+#contato h3{
+    text-align: center;
+    color: #6e6d6b;
+    margin-bottom: 10px;
+}
+
+#contato p{
+    padding: 10px 0;
+    margin: 0 auto;
+    text-align: center;
+    color: #928d87;
+    width: 58%;
+}
+
+.iframe{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 60px
+}
+
+.iframe iframe{
+    width: 100%;
+}
+/* CONTATO - FIM */
+
+/* FOOTER - COMEÇO*/
+
+footer{
+    background-color: #0c6e71;
+    padding-bottom: 20px;
+    width: 100%;
+}
+
+footer img{
+    width: 120px;
+    display: block;
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+footer p{
+    color: white;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+/* FOOTER - FIM */
+
+/* RESPONSIVO - COMEÇO*/
+
+@media (max-width: 1024px){
+    .titulo h1, .titulo p{
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 768px){
+    .imagem img{
+        display: none;
+    }
+
+    figcaption{
+        font-size: 15px;
+    }
+}
+
+/* RESPONSIVO - FIM */
